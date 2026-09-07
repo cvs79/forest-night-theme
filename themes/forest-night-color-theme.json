@@ -1015,10 +1015,71 @@
     {
       "name": "YAML Values",
       "scope": [
-        "string.unquoted.yaml"
+        "string.unquoted.plain.in.yaml",
+        "string.unquoted.plain.out.yaml",
+        "string.unquoted.block.yaml",
+        "string.quoted.single.yaml",
+        "string.quoted.double.yaml"
       ],
       "settings": {
         "foreground": "#c9d1d9"
+      }
+    },
+    {
+      "name": "YAML Literals",
+      "scope": [
+        "constant.language.boolean.yaml",
+        "constant.language.null.yaml",
+        "constant.numeric.integer.yaml",
+        "constant.numeric.float.yaml"
+      ],
+      "settings": {
+        "foreground": "#8FBC8F"
+      }
+    },
+
+    // TOML
+    {
+      "name": "TOML Table Headers",
+      "scope": [
+        "entity.name.table.toml"
+      ],
+      "settings": {
+        "foreground": "#F39C12"
+      }
+    },
+    {
+      "name": "TOML Keys",
+      "scope": [
+        "keyword.key.toml",
+        "support.type.property-name.toml",
+        "entity.name.tag.toml"
+      ],
+      "settings": {
+        "foreground": "#66D9EF"
+      }
+    },
+    {
+      "name": "TOML Strings",
+      "scope": [
+        "string.quoted.toml",
+        "string.unquoted.toml"
+      ],
+      "settings": {
+        "foreground": "#4ECDC4"
+      }
+    },
+    {
+      "name": "TOML Literals",
+      "scope": [
+        "constant.numeric.toml",
+        "constant.language.boolean.toml",
+        "constant.other.date.toml",
+        "constant.other.time.toml",
+        "constant.other.datetime.toml"
+      ],
+      "settings": {
+        "foreground": "#8FBC8F"
       }
     },
 
